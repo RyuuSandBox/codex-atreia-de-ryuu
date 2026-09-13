@@ -1,21 +1,4 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Dossier de progression AION 2 pour le lancement global du 5 octobre 2026 : roadmap 1 a 45, systemes de puissance, routine endgame et pieges a eviter.">
-<meta name="color-scheme" content="light dark">
-<meta property="og:title" content="Codex d'Atrea de Ryuu">
-<meta property="og:description" content="Tout ce qu'il faut savoir sur AION 2 avant le lancement global du 5 octobre 2026.">
-<meta property="og:type" content="article">
-<title>Codex d'Atrea de Ryuu</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%AA%BD%3C/text%3E%3C/svg%3E">
-<style>
-html{color-scheme:light dark}
-body{margin:0}
-img{max-width:100%}
-[hidden]{display:none!important}
-</style>
+<title>Codex d'Atreia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap">
@@ -282,8 +265,7 @@ details.mobile-toc summary{cursor:pointer; font-family:"JetBrains Mono",ui-monos
 nav.toc.desk{display:none;}
 @media (min-width:1000px){nav.toc.desk{display:block;}}
 </style>
-</head>
-<body>
+
 <header class="hero">
   <canvas id="aether" aria-hidden="true"></canvas>
   <div class="hero-in">
@@ -324,7 +306,7 @@ nav.toc.desk{display:none;}
       <path d="M200 34 L206 48 L200 62 L194 48 Z" fill="#0A0D1A" opacity=".55"/>
     </svg>
     <p class="eyebrow">Aion 2 &middot; Lancement global &middot; 5 octobre 2026</p>
-    <h1>Codex d'Atrea</h1>
+    <h1>Codex d'Atreia</h1>
     <p class="dek">Du niveau&nbsp;1 à l'endgame : la route à suivre, les systèmes qui font monter un personnage, et les pièges qui vont bloquer la moitié du serveur la première semaine. Écrit à partir de mon temps de jeu sur la version taïwanaise, recoupé avec deux guides de joueurs TW et les annonces de NC.</p>
     <p class="byline">Ryuu &middot; PC / Steam &amp; PURPLE &middot; Saison&nbsp;1 &middot; mis à jour le 13 septembre 2026</p>
 
@@ -354,7 +336,7 @@ nav.toc.desk{display:none;}
 
       <!-- ============ 1 ============ -->
       <section id="s1">
-        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 01 — Avant le jour J</span>
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 01 — <span id="ey-1">Avant le jour J</span></span>
         <h2 class="sec">Le calendrier</h2>
         <p class="sec-intro">Premier réflexe à avoir : la version globale n'est pas la version coréenne. On démarre sur le jeu de base, sans le Chapitre&nbsp;1 sorti en Corée le 1<sup>er</sup> juillet. Donc tous les guides qui parlent de niveau&nbsp;50, du Pugiliste, du pendentif ou des régions d'Eltnen et Morheim décrivent un jeu que vous n'aurez pas le 5 octobre.</p>
 
@@ -373,8 +355,8 @@ nav.toc.desk{display:none;}
         </div>
 
         <div class="note gold">
-          <span class="lab g">Le test de charge, c'est cette semaine</span>
-          <p>Cap niveau&nbsp;37, les 8 classes jouables, trois donjons ouverts (Grotte de Krao, Canyon d'Urugugu, Temple du Feu). Hôtel des ventes, marché, échange entre joueurs, garde-robe et tout le PvP sont coupés, et les personnages sont effacés à la fin. Ça reste utile pour deux choses : <strong>essayer votre classe en jeu</strong> et <strong>photographier vos réglages de création</strong>, qui ne se sauvegardent pas.</p>
+          <span class="lab g" id="lst-lab">Le test de charge, c'est cette semaine</span>
+          <p><span id="lst-lead">Cap niveau&nbsp;37, les 8 classes jouables, trois donjons ouverts</span> (Grotte de Krao, Canyon d'Urugugu, Temple du Feu). Hôtel des ventes, marché, échange entre joueurs, garde-robe et tout le PvP sont coupés, et les personnages sont effacés à la fin. <span id="lst-tail">Ça reste utile pour deux choses : <strong>essayer votre classe en jeu</strong> et <strong>photographier vos réglages de création</strong>, qui ne se sauvegardent pas.</span></p>
         </div>
 
         <h3>Ce que la version globale change</h3>
@@ -394,7 +376,7 @@ nav.toc.desk{display:none;}
           <table>
             <thead><tr><th>Pack</th><th class="num">Prix</th><th>Contenu additionnel</th></tr></thead>
             <tbody>
-              <tr><td class="k">Standard</td><td class="num">21,25 €</td><td>Accès anticipé 5 jours, coffre d'approvisionnement, titre « Avant-garde d'Atrea », 30 j de Membership</td></tr>
+              <tr><td class="k">Standard</td><td class="num">21,25 €</td><td>Accès anticipé 5 jours, coffre d'approvisionnement, titre « Avant-garde d'Atreia », 30 j de Membership</td></tr>
               <tr><td class="k">Deluxe</td><td class="num">42,49 €</td><td>+ skin d'armure « Ascended Daeva », skin d'arme « Eternal Sun »</td></tr>
               <tr><td class="k">Ultimate</td><td class="num">84,99 €</td><td>+ coffre de style, skin « Moonlit Aria », familier Dragon Noir, ailes « Blazing Sun »</td></tr>
             </tbody>
@@ -419,7 +401,7 @@ nav.toc.desk{display:none;}
         <div class="factions">
           <div class="fac">
             <h4>Elyos</h4>
-            <p>Les anges d'Atrea, la lumière et la grâce. Deux villages de départ, où se trouvent les monolithes d'échange de plumes.</p>
+            <p>Les anges d'Atreia, la lumière et la grâce. Deux villages de départ, où se trouvent les monolithes d'échange de plumes.</p>
           </div>
           <div class="fac asmo">
             <h4>Asmodiens</h4>
@@ -548,7 +530,7 @@ nav.toc.desk{display:none;}
         <div class="pyr">
           <div class="tier t1">
             <div class="hd"><span class="nm">Statistiques principales : les divinités</span><span class="mult">1 pt = +0,2 % × 2 stats</span></div>
-            <p class="lst">Les 10 seigneurs empiréens d'Atrea : <strong>Nezekan, Vaizel, Kaisinel, Yustiel, Siel, Israphel, Marchutan, Lumiel, Triniel, Zikel</strong>. Chacun couvre une paire de statistiques. <em>Zikel</em> (destruction) = attaque + résistance aux attaques parfaites, la stat des DPS. <em>Triniel</em> (mort) = coup critique + pénétration. <em>Nezekan</em> = défense + chance de coup parfait. On les lit comme des doubles statistiques, jamais comme une stat brute.</p>
+            <p class="lst">Les 10 seigneurs empiréens d'Atreia : <strong>Nezekan, Vaizel, Kaisinel, Yustiel, Siel, Israphel, Marchutan, Lumiel, Triniel, Zikel</strong>. Chacun couvre une paire de statistiques. <em>Zikel</em> (destruction) = attaque + résistance aux attaques parfaites, la stat des DPS. <em>Triniel</em> (mort) = coup critique + pénétration. <em>Nezekan</em> = défense + chance de coup parfait. On les lit comme des doubles statistiques, jamais comme une stat brute.</p>
           </div>
           <div class="arrow">alimente ↓</div>
           <div class="tier t2">
@@ -1099,9 +1081,32 @@ nav.toc.desk{display:none;}
     else if(d === 0) n.textContent = "Aujourd'hui";
     else n.textContent = past;
   }
-  setCd("cd-lst", new Date("2026-09-17T15:00:00+02:00"), "Terminé");
-  setCd("cd-ea",  new Date("2026-09-30T00:00:00+02:00"), "En cours");
-  setCd("cd-gl",  new Date("2026-10-05T00:00:00+02:00"), "En ligne");
+  var LST_DEBUT = new Date("2026-09-17T15:00:00+02:00");
+  var LST_FIN   = new Date("2026-09-19T03:00:00+02:00");
+  var EA        = new Date("2026-09-30T00:00:00+02:00");
+  var LANCEMENT = new Date("2026-10-05T00:00:00+02:00");
+
+  setCd("cd-lst", LST_DEBUT, "Terminé");
+  setCd("cd-ea",  EA,        "En cours");
+  setCd("cd-gl",  LANCEMENT, "En ligne");
+
+  /* les deux formulations qui vieillissent mal, recalculées à chaque ouverture */
+  var maintenant = new Date();
+  function txt(id, s){ var el = document.getElementById(id); if(el) el.innerHTML = s; }
+
+  if(maintenant >= LANCEMENT){
+    txt("ey-1", "Le lancement");
+  } else if(maintenant >= EA){
+    txt("ey-1", "Accès anticipé en cours");
+  }
+
+  if(maintenant >= LST_FIN){
+    txt("lst-lab", "Le test de charge est passé");
+    txt("lst-lead", "Il s'est tenu les 17 et 18 septembre : cap niveau&nbsp;37, les 8 classes jouables, trois donjons ouverts");
+    txt("lst-tail", "Les personnages créés à cette occasion n'existent plus, il faudra tout recommencer au lancement.");
+  } else if(maintenant >= LST_DEBUT){
+    txt("lst-lab", "Le test de charge est ouvert en ce moment");
+  }
 
   /* checklists — per-viewer, best effort */
   var KEY = "codex-atrea-v1", state = {};
@@ -1180,6 +1185,3 @@ nav.toc.desk{display:none;}
   }
 })();
 </script>
-
-</body>
-</html>
