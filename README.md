@@ -1,4 +1,4 @@
-# Codex d'Atrea de Ryuu
+# Codex d'Atreia de Ryuu
 
 Dossier de progression pour **AION 2**, version globale (lancement le 5 octobre 2026, PC / Steam & PURPLE).
 
