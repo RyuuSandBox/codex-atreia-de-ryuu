@@ -279,6 +279,36 @@ details.mobile-toc{margin-top:30px;}
 details.mobile-toc summary{cursor:pointer; font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.5px; letter-spacing:.15em; text-transform:uppercase; color:var(--ink-3); padding:11px 14px; border:1px solid var(--line); border-radius:3px; background:var(--surface);}
 nav.toc.desk{display:none;}
 @media (min-width:1000px){nav.toc.desk{display:block;}}
+
+/* --- relevés du Launch Scale Test, 17-18 septembre --- */
+.bta{
+  display:inline-flex; align-items:center; gap:4px; vertical-align:2px;
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.2px; letter-spacing:.1em;
+  text-transform:uppercase; font-weight:700; white-space:nowrap; line-height:1.6;
+  color:var(--aether-ink); background:var(--aether-soft); border:1px solid var(--aether);
+  border-radius:999px; padding:1px 8px; margin-left:7px;
+}
+.bta::before{content:""; width:5px; height:5px; border-radius:50%; background:var(--aether); flex:none;}
+.betabox{
+  border:1px solid var(--aether); border-left:5px solid var(--aether); background:var(--surface);
+  border-radius:0 7px 7px 0; padding:22px 24px; margin:0 0 30px; box-shadow:var(--shadow);
+}
+.betabox .lab{color:var(--aether-ink); margin-bottom:9px;}
+.betabox h2{font-family:"Cinzel",serif; font-size:1.45rem; line-height:1.18; margin:0 0 8px; color:var(--ink);}
+.betabox > p{margin:0 0 18px; color:var(--ink-2); max-width:var(--maxw);}
+.betabox > p:last-child{margin:18px 0 0; font-size:.9rem; color:var(--ink-3);}
+.betabox ul{list-style:none; margin:0; padding:0; display:grid; gap:11px;}
+.betabox li{
+  background:var(--surface-2); border:1px solid var(--line); border-top:2px solid var(--aether);
+  border-radius:5px; padding:12px 14px; font-size:.92rem; color:var(--ink-2); min-width:0;
+}
+.betabox li b{display:block; color:var(--ink); margin-bottom:3px; font-size:.95rem;}
+.betabox li.wip{border-top-color:var(--gold);}
+.betabox li.wip b{color:var(--gold-ink);}
+@media (min-width:900px){ .betabox ul{grid-template-columns:1fr 1fr;} }
+@media (max-width:620px){ .betabox{padding:18px 16px;} .bta{margin-left:5px;} }
+.strip .num{overflow-wrap:anywhere;}
+@media (max-width:620px){ .strip{grid-template-columns:1fr 1fr;} .strip .num{font-size:1.1rem;} }
 </style>
 
 <header class="hero">
@@ -344,6 +374,22 @@ nav.toc.desk{display:none;}
 
 <div class="shell">
 
+  <section class="betabox" id="sbeta">
+    <span class="lab a">Mise &agrave; jour du 18 septembre</span>
+    <h2>Ce que la b&ecirc;ta a tranch&eacute;</h2>
+    <p>La premi&egrave;re journ&eacute;e du Launch Scale Test est pass&eacute;e, la seconde a lieu ce soir. Ce codex a &eacute;t&eacute; &eacute;crit avant, sur la version ta&iuml;wanaise et les annonces officielles. Voil&agrave; ce que les six heures de jeu sur le client global ont confirm&eacute;, corrig&eacute; et laiss&eacute; ouvert. Le d&eacute;tail est rep&eacute;r&eacute; dans les chapitres par la pastille <span class="bta">vu en b&ecirc;ta</span></p>
+    <ul>
+      <li><b>Quatre emplacements de stigma</b>Confirm&eacute;, et pr&eacute;sent&eacute; comme une limite de Saison&nbsp;1. La Saison&nbsp;2 devrait en rendre en m&ecirc;me temps qu'elle ajoutera le Pugiliste.</li>
+      <li><b>Les stigmas s'ouvrent au niveau 22</b>Par la qu&ecirc;te &laquo;&nbsp;&Agrave; l'&eacute;coute des voix&nbsp;&raquo;. Avant &ccedil;a le panneau entier est cadenass&eacute;.</li>
+      <li><b>Correction &mdash; les stigmas ont bien des nodes</b>J'&eacute;crivais le contraire au chapitre&nbsp;7. Ils en ont quatre, automatiques, aux niveaux 5, 10, 15 et 20. C'est l'erreur que la b&ecirc;ta a corrig&eacute;e.</li>
+      <li><b>Trois nodes sur cinq, c'est le bon chiffre</b>La barre &laquo;&nbsp;Sp&eacute;cialis&eacute;&nbsp;&raquo; affiche bien trois emplacements, et les cinq options sont verrouill&eacute;es &agrave; 8, 8, 8, 12 et 16.</li>
+      <li><b>Le client est traduit en fran&ccedil;ais</b>Sorts, statistiques et interface. &laquo;&nbsp;Temp&ecirc;te d&eacute;ferlante&nbsp;&raquo;, &laquo;&nbsp;VIT de combat&nbsp;&raquo;, &laquo;&nbsp;PM&nbsp;&raquo;, &laquo;&nbsp;DGT&nbsp;&raquo;. Les guides de classe gardent quand m&ecirc;me l'anglais, et ils expliquent pourquoi.</li>
+      <li><b>Le calendrier tient</b>Acc&egrave;s anticip&eacute; le 30 septembre, ouverture le 5 octobre. Rien du test n'est conserv&eacute;, ni personnage ni monnaie.</li>
+      <li class="wip"><b>Ce qui reste ouvert</b>&Agrave; quel niveau s'ouvrent le deuxi&egrave;me et le troisi&egrave;me emplacement de sp&eacute;cialisation. Le test &eacute;tait cap&eacute; au niveau 37, aucun sort ne montait assez haut pour arbitrer.</li>
+    </ul>
+    <p>Six heures de jeu sur un Assassin, le 17 au soir, personnages effac&eacute;s &agrave; la fin. Tout ce qui porte la pastille est relev&eacute; &agrave; l'&eacute;cran. Le reste du codex vient toujours de Ta&iuml;wan et des annonces.</p>
+  </section>
+
   <details class="mobile-toc">
     <summary>Sommaire — 14 chapitres + annexes</summary>
     <nav class="toc" aria-label="Sommaire"><ol id="toc-mobile"></ol></nav>
@@ -378,16 +424,17 @@ nav.toc.desk{display:none;}
         </div>
 
         <div class="note gold">
-          <span class="lab g" id="lst-lab">Le test de charge, c'est cette semaine</span>
-          <p><span id="lst-lead">Cap niveau&nbsp;37, les 8 classes jouables, trois donjons ouverts</span> (Grotte de Krao, Canyon d'Urugugu, Temple du Feu). Hôtel des ventes, marché, échange entre joueurs, garde-robe et tout le PvP sont coupés, et les personnages sont effacés à la fin. <span id="lst-tail">Ça reste utile pour deux choses : <strong>essayer votre classe en jeu</strong> et <strong>photographier vos réglages de création</strong>, qui ne se sauvegardent pas.</span></p>
+          <span class="lab g" id="lst-lab">Ce que le test de charge a montr&eacute;</span>
+          <p><span id="lst-lead">Cap niveau&nbsp;37, les 8 classes jouables, trois donjons ouverts</span> (Grotte de Krao, Canyon d'Urugugu, Temple du Feu). H&ocirc;tel des ventes, march&eacute;, &eacute;change entre joueurs, garde-robe et tout le PvP &eacute;taient coup&eacute;s, et les personnages ont &eacute;t&eacute; effac&eacute;s &agrave; la fin. <span id="lst-tail">Six heures de jeu par jour, assez pour v&eacute;rifier une bonne partie de ce chapitre et pour corriger une erreur du chapitre&nbsp;7.</span><span class="bta">vu en bêta</span></p>
+          <p>Deux choses valaient d'y passer, et elles valent encore pour le 30 septembre. <strong>Essayer sa classe en jeu</strong> plut&ocirc;t que sur le papier, et <strong>photographier ses r&eacute;glages de cr&eacute;ation</strong>, qui ne se sauvegardent toujours pas d'une session &agrave; l'autre.</p>
         </div>
 
         <h3>Ce que la version globale change</h3>
         <div class="grid">
           <div class="card"><span class="tag">Contenu</span><h4>Cap niveau 45, 8 classes</h4><p>Six épisodes de quête principale. Le Pugiliste, le niveau&nbsp;50, le pendentif et les nouvelles régions arriveront plus tard.</p></div>
           <div class="card"><span class="tag">Équipement</span><h4>Pas d'équipement héroïque en Saison 1</h4><p>NC a retiré le palier héroïque du lancement et relevé les seuils d'iLevel. Courbe plus plate : la puissance vient des cartes d'arcane et de la synergie, pas de la course au gear score.</p></div>
-          <div class="card"><span class="tag">Compétences</span><h4>4 emplacements de stigma</h4><p>Contre 6 en Asie. Arbitrage obligatoire entre survie et burst. Compétences et stigmas plafonnés au niveau&nbsp;20.</p></div>
-          <div class="card"><span class="tag">Groupes</span><h4>Expéditions à 5, raids à 10</h4><p>Revues à la hausse (4→5, 8→10). Groupes inter-factions autorisés en PvE.</p></div>
+          <div class="card"><span class="tag">Compétences</span><h4>4 emplacements de stigma</h4><p>Contre 6 en Asie. Arbitrage obligatoire entre survie et burst. Compétences et stigmas plafonnés au niveau&nbsp;20. La bêta confirme les quatre emplacements, et la limite est annoncée pour la Saison 1 seulement.<span class="bta">vu en bêta</span></p></div>
+          <div class="card"><span class="tag">Groupes</span><h4>Expéditions à 5, raids à 10</h4><p>Revues à la hausse (4→5, 8→10). Groupes inter-factions autorisés en PvE.<span class="bta">vu en bêta</span></p></div>
           <div class="card"><span class="tag">Serveurs</span><h4>Quatre régions</h4><p>Amérique du Nord, Amérique du Sud, Europe, Japon. Pas d'Océanie. 4 slots de personnage, 3 familiers maximum.</p></div>
           <div class="card"><span class="tag">Boutique</span><h4>≈ 15 €/mois pour le marché</h4><p>Le Membership débloque le Marché et l'échange de monnaie. Boutique cosmétique, passes de combat par personnage.</p></div>
         </div>
@@ -710,14 +757,20 @@ nav.toc.desk{display:none;}
             </tbody>
           </table>
         </div>
-        <p>Les nodes sont des modifications profondes, pas des bonus chiffrés : un grappin qui devient une charge quand il rate, un sort qui rend des PV, un sort qui réduit des temps de recharge, un sort qui étourdit trois secondes une fois sur deux. On peut en équiper <strong>trois</strong>, choisies parmi cinq. Entre un sort de base et un sort à trois nodes, l'écart est considérable.</p>
+        <p>Les nodes sont des modifications profondes, pas des bonus chiffrés : un grappin qui devient une charge quand il rate, un sort qui rend des PV, un sort qui réduit des temps de recharge, un sort qui étourdit trois secondes une fois sur deux. On peut en équiper <strong>trois</strong>, choisies parmi cinq, et la bêta le confirme à l'écran.<span class="bta">vu en bêta</span> Chaque option porte son propre palier, et ce sont toujours les mêmes, <strong>8, 8, 8, 12 et 16</strong>. Trois options sont donc déjà disponibles quand le sort passe au 8, mais un seul emplacement est ouvert à ce moment-là. Entre un sort de base et un sort à trois nodes, l'écart est considérable.</p>
 
         <div class="note">
           <span class="lab a">Quels sorts monter</span>
           <p>Le <strong>clic gauche</strong> et le <strong>clic droit</strong> sont, dans 99&nbsp;% des cas et quelle que soit la classe, vos deux sorts majeurs. Ajoutez-en deux autres propres à votre build et vous avez <strong>quatre sorts à pousser au niveau 20</strong>, cinq si vous êtes très patient. Ne vous dispersez pas au-delà : un sort au 20 vaut bien plus que quatre sorts au 14.</p>
         </div>
 
-        <p>Les <strong>compétences passives</strong> marchent autrement : pas de nodes, c'est la montée en niveau seule qui les renforce. Les <strong>stigmas</strong> suivent la même logique, jusqu'au niveau 20 en version globale, sans nodes, alimentés surtout par les points d'Abîme.</p>
+        <p>Les <strong>compétences passives</strong> marchent autrement, pas de nodes à choisir, c'est la montée en niveau seule qui les renforce. Certaines sont en plus verrouillées par votre <strong>niveau de personnage</strong> et pas par vos points, j'en ai vu apparaître aux niveaux 21, 23 et 25.<span class="bta">vu en bêta</span> Les <strong>stigmas</strong>, eux, montent jusqu'au niveau 20 en version globale et sont alimentés surtout par les points d'Abîme.</p>
+        <div class="note trap">
+          <span class="lab">Correction apr&egrave;s la b&ecirc;ta</span>
+          <p>Ce chapitre affirmait que les stigmas n'ont pas de nodes. C'est faux, et c'est le seul vrai correctif que le test m'a impos&eacute;.<span class="bta">vu en bêta</span> Chaque stigma en porte <strong>quatre</strong>, aux niveaux <strong>5, 10, 15 et 20</strong>. La diff&eacute;rence avec les actifs, c'est qu'ils sont <strong>automatiques</strong>, il n'y a rien &agrave; choisir, ils tombent tout seuls en montant le stigma.</p>
+          <p>&Ccedil;a change la fa&ccedil;on de d&eacute;penser vos shards. Un stigma laiss&eacute; &agrave; 14 n'est pas &laquo;&nbsp;presque au 15&nbsp;&raquo;, il lui manque un node entier. Les paliers 5, 10, 15 et 20 sont les seuls chiffres qui comptent, le reste n'est que du remplissage entre deux.</p>
+        </div>
+
         <p>C'est aussi pour cette raison que les <strong>anneaux</strong> comptent tant : ce sont les seules pièces qui donnent des niveaux de compétences actives, et un même sort peut y figurer deux fois.</p>
       </section>
 
@@ -758,6 +811,7 @@ nav.toc.desk{display:none;}
         <p>Débloquées au niveau&nbsp;45. Donjons chronométrés où l'on remplit une jauge jusqu'à 100&nbsp;% avant de faire apparaître le boss final, avec une note de performance qui conditionne les récompenses. Elles donnent les deux ressources qui font progresser vos compétences : <strong>fragments de stigma</strong> et <strong>cartes d'arcane</strong>. Une par jour, contenu obligatoire.</p>
 
         <h3>Les stigmas</h3>
+        <p>Première chose, le panneau ne s'ouvre pas avant le <strong>niveau 22</strong>, et il faut pour ça finir la quête &laquo;&nbsp;À l'écoute des voix&nbsp;&raquo;.<span class="bta">vu en bêta</span> Avant, tout est cadenassé, inutile de chercher à préparer un build de stigma pendant le début du leveling.</p>
         <p>Les fragments de transcendance se transmutent en points de stigma. L'autre robinet, c'est la <strong>boutique PvP, à 25 000 points d'Abîme le point</strong>, et pour la plupart des joueurs ce sera la source principale. Avec seulement <strong>4 emplacements en version globale</strong>, il va falloir trancher : ne montez que ce que votre rotation utilise pour de bon.</p>
 
         <h3>Les cartes d'arcane</h3>
@@ -1052,12 +1106,13 @@ nav.toc.desk{display:none;}
           <li>Les niveaux exacts d'apparition des quêtes d'ascension, et la couleur des quêtes secondaires dans le client français.</li>
           <li>Le nombre d'arbres de Daevanion et le niveau maximum des familiers à l'ouverture globale.</li>
           <li>Lesquelles des mécaniques arrivées après le lancement coréen (transfert, potentiel, amélioration des ailes) seront là dès le 5 octobre.</li>
-          <li>Les noms français définitifs : smite, damage boost, Odyle radieuse et quelques autres ne sont pour l'instant connus qu'en anglais.</li>
+          <li>Le reste des noms français. Le client est bien traduit, la bêta l'a montré, mais six heures n'ont pas suffi à relever les libellés du smite, du damage boost et de l'Odyle radieuse.</li>
+          <li>À quel niveau s'ouvrent le deuxième et le troisième emplacement de spécialisation. Le test confirmait qu'il y en a trois, pas à quel palier ils arrivent.</li>
         </ul>
       </section>
 
       <footer>
-        <p>Écrit le 13 septembre 2026, avant l'ouverture des serveurs européens, à partir de mon temps de jeu sur la version taïwanaise, de deux guides de joueurs TW et des annonces officielles. Une partie des chiffres bougera en version globale ; je mettrai la page à jour au fil des premières semaines.</p>
+        <p>Dernière mise à jour le 18 septembre 2026, après le Launch Scale Test et avant l'ouverture des serveurs européens. Écrit à partir de mon temps de jeu sur la version taïwanaise, de deux guides de joueurs TW, des annonces officielles, et de six heures sur le client global. Une partie des chiffres bougera encore au lancement. Je mettrai la page à jour au fil des premières semaines.</p>
         <p>Habillage graphique original. Ni le logo ni les visuels d'Aion&nbsp;2 ne sont reproduits ici ; Aion&nbsp;2 est une marque de NCSOFT Corporation.</p>
       </footer>
 
@@ -1124,11 +1179,11 @@ nav.toc.desk{display:none;}
   }
 
   if(maintenant >= LST_FIN){
-    txt("lst-lab", "Le test de charge est passé");
-    txt("lst-lead", "Il s'est tenu les 17 et 18 septembre : cap niveau&nbsp;37, les 8 classes jouables, trois donjons ouverts");
-    txt("lst-tail", "Les personnages créés à cette occasion n'existent plus, il faudra tout recommencer au lancement.");
+    txt("lst-lab", "Ce que le test de charge a montré");
+    txt("lst-lead", "Il s'est tenu les 17 et 18 septembre. Cap niveau&nbsp;37, les 8 classes jouables, trois donjons ouverts");
+    txt("lst-tail", "Six heures de jeu par jour, assez pour vérifier une bonne partie de ce chapitre et pour corriger une erreur du chapitre&nbsp;7. Les personnages créés à cette occasion n'existent plus.<span class=\"bta\">vu en bêta</span>");
   } else if(maintenant >= LST_DEBUT){
-    txt("lst-lab", "Le test de charge est ouvert en ce moment");
+    txt("lst-lab", "Le test de charge est en cours");
   }
 
   /* checklists — per-viewer, best effort */
