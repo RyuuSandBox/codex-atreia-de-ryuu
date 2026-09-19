@@ -309,6 +309,70 @@ nav.toc.desk{display:none;}
 @media (max-width:620px){ .betabox{padding:18px 16px;} .bta{margin-left:5px;} }
 .strip .num{overflow-wrap:anywhere;}
 @media (max-width:620px){ .strip{grid-template-columns:1fr 1fr;} .strip .num{font-size:1.1rem;} }
+
+/* --- relevés du jour 1 du test, source unique --- */
+.j1{
+  display:inline-flex; align-items:center; gap:4px; vertical-align:2px; text-decoration:none;
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.2px; letter-spacing:.1em;
+  text-transform:uppercase; font-weight:700; white-space:nowrap; line-height:1.6;
+  color:var(--gold-ink); background:var(--gold-soft); border:1px solid var(--gold);
+  border-radius:999px; padding:1px 8px; margin-left:7px;
+}
+.j1::before{content:""; width:5px; height:5px; border-radius:50%; background:var(--gold); flex:none;}
+.j1:hover{filter:brightness(1.12);}
+.j1box{
+  border:1px solid var(--gold); border-left:5px solid var(--gold); background:var(--surface);
+  border-radius:0 7px 7px 0; padding:22px 24px; margin:0 0 30px; box-shadow:var(--shadow);
+}
+.j1box .lab{color:var(--gold-ink); margin-bottom:9px;}
+.j1box h2{font-family:"Cinzel",Georgia,serif; font-size:1.45rem; line-height:1.18; margin:0 0 8px; color:var(--ink);}
+.j1box > p{margin:0 0 18px; color:var(--ink-2); max-width:var(--maxw);}
+.j1box > p:last-child{margin:18px 0 0; font-size:.9rem; color:var(--ink-3);}
+.j1box ul{list-style:none; margin:0; padding:0; display:grid; gap:11px;}
+.j1box li{
+  background:var(--surface-2); border:1px solid var(--line); border-top:2px solid var(--gold);
+  border-radius:5px; padding:12px 14px; font-size:.92rem; color:var(--ink-2); min-width:0;
+}
+.j1box li b{display:block; color:var(--ink); margin-bottom:3px; font-size:.95rem;}
+.j1box li.att{border-top-color:var(--blood, #A02138);}
+@media (min-width:900px){ .j1box ul{grid-template-columns:1fr 1fr;} }
+@media (max-width:620px){ .j1box{padding:18px 16px;} .j1{margin-left:5px;} }
+
+/* --- bilan du test de lancement, deux niveaux de fiabilite --- */
+.j1box h3{
+  font-family:"Cinzel",Georgia,serif; font-size:1.04rem; line-height:1.25;
+  margin:26px 0 11px; color:var(--ink);
+}
+.j1box h3:first-of-type{margin-top:2px;}
+.j1box h3 .cnt{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.62em; font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; margin-left:9px; vertical-align:2px;
+}
+.j1box h3.deux .cnt{color:var(--aether);}
+.j1box h3.une .cnt{color:var(--gold-ink);}
+.j1box li.ok{border-top-color:var(--aether);}
+/* --- releve d'infobulles du client --- */
+.tipbox{
+  border:1px solid var(--aether); border-left:5px solid var(--aether); background:var(--surface);
+  border-radius:0 7px 7px 0; padding:22px 24px; margin:0 0 30px; box-shadow:var(--shadow);
+}
+.tipbox .lab{color:var(--aether); margin-bottom:9px;}
+.tipbox h2{font-family:"Cinzel",Georgia,serif; font-size:1.45rem; line-height:1.18; margin:0 0 8px; color:var(--ink);}
+.tipbox > p{margin:0 0 18px; color:var(--ink-2); max-width:var(--maxw);}
+.tipbox > p:last-child{margin:18px 0 0; font-size:.9rem; color:var(--ink-3);}
+.tipbox ul{list-style:none; margin:0; padding:0; display:grid; gap:11px;}
+.tipbox li{
+  background:var(--surface-2); border:1px solid var(--line); border-top:2px solid var(--aether);
+  border-radius:5px; padding:12px 14px; font-size:.92rem; color:var(--ink-2); min-width:0;
+}
+.tipbox li b{display:block; color:var(--ink); margin-bottom:3px; font-size:.95rem;}
+.tipbox li.corr{border-top-color:var(--blood, #A02138);}
+.tipbox code{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.86em;
+  background:var(--gold-soft); border:1px solid var(--line); border-radius:3px; padding:0 4px;
+}
+@media (min-width:900px){ .tipbox ul{grid-template-columns:1fr 1fr;} }
+@media (max-width:620px){ .tipbox{padding:18px 16px;} }
 </style>
 
 <header class="hero">
@@ -377,7 +441,7 @@ nav.toc.desk{display:none;}
   <section class="betabox" id="sbeta">
     <span class="lab a">Mise &agrave; jour du 18 septembre</span>
     <h2>Ce que la b&ecirc;ta a tranch&eacute;</h2>
-    <p>La premi&egrave;re journ&eacute;e du Launch Scale Test est pass&eacute;e, la seconde a lieu ce soir. Ce codex a &eacute;t&eacute; &eacute;crit avant, sur la version ta&iuml;wanaise et les annonces officielles. Voil&agrave; ce que les six heures de jeu sur le client global ont confirm&eacute;, corrig&eacute; et laiss&eacute; ouvert. Le d&eacute;tail est rep&eacute;r&eacute; dans les chapitres par la pastille <span class="bta">vu en b&ecirc;ta</span></p>
+    <p>Les deux journ&eacute;es du Launch Scale Test sont pass&eacute;es. Ce codex a &eacute;t&eacute; &eacute;crit avant, sur la version ta&iuml;wanaise et les annonces officielles. Voil&agrave; ce que les six heures de jeu sur le client global ont confirm&eacute;, corrig&eacute; et laiss&eacute; ouvert. Le d&eacute;tail est rep&eacute;r&eacute; dans les chapitres par la pastille <span class="bta">vu en b&ecirc;ta</span></p>
     <ul>
       <li><b>Quatre emplacements de stigma</b>Confirm&eacute;, et pr&eacute;sent&eacute; comme une limite de Saison&nbsp;1. La Saison&nbsp;2 devrait en rendre en m&ecirc;me temps qu'elle ajoutera le Pugiliste.</li>
       <li><b>Les stigmas s'ouvrent au niveau 22</b>Par la qu&ecirc;te &laquo;&nbsp;&Agrave; l'&eacute;coute des voix&nbsp;&raquo;. Avant &ccedil;a le panneau entier est cadenass&eacute;.</li>
@@ -388,6 +452,39 @@ nav.toc.desk{display:none;}
       <li class="wip"><b>Ce qui reste ouvert</b>&Agrave; quel niveau s'ouvrent le deuxi&egrave;me et le troisi&egrave;me emplacement de sp&eacute;cialisation. Le test &eacute;tait cap&eacute; au niveau 37, aucun sort ne montait assez haut pour arbitrer.</li>
     </ul>
     <p>Six heures de jeu sur un Assassin, le 17 au soir, personnages effac&eacute;s &agrave; la fin. Tout ce qui porte la pastille est relev&eacute; &agrave; l'&eacute;cran. Le reste du codex vient toujours de Ta&iuml;wan et des annonces.</p>
+  </section>
+
+  <section class="j1box" id="j1">
+    <span class="lab">19 septembre &middot; bilan du Launch Scale Test</span>
+    <h2>Ce que le test de lancement a montr&eacute;</h2>
+    <p>Le Launch Scale Test est termin&eacute;, et deux cr&eacute;ateurs ont publi&eacute; depuis. Le premier a racont&eacute; sa journ&eacute;e d'ouverture. Le second est mont&eacute; jusqu'au niveau 30 et a compar&eacute; menu par menu avec la version ta&iuml;wanaise. L&agrave; o&ugrave; les deux se rejoignent, je le tiens pour acquis. L&agrave; o&ugrave; un seul le dit, &ccedil;a reste ici en attendant. Dans les deux cas c'est une build de test, pas la version qui ouvrira le 5 octobre.</p>
+    <h3 class="deux">Ce que les deux confirment<span class="cnt">solide</span></h3>
+    <ul>
+      <li class="ok"><b>L'&eacute;quipement fabriqu&eacute; perd son bonus PvE</b>Le modificateur en pourcentage saute sur les armes, les armures et les bijoux. En &eacute;change les stats brutes montent fort, une &eacute;p&eacute;e Ebony passe de 485 &agrave; 606 d'attaque l&agrave; o&ugrave; Ta&iuml;wan affiche 372 &agrave; 465.</li>
+      <li class="ok"><b>Les bijoux changent de r&ocirc;le</b>Tous gagnent might et precision, le collier prend du combat speed, les boucles du movement speed. Ce sont les emplacements qui bougent le plus.</li>
+      <li class="ok"><b>Le Genus Insight est refait de fond en comble</b>Le smite tombe de 4,8&nbsp;% par genus &agrave; 3&nbsp;%, et seulement sur le genus sp&eacute;cial. Les lignes d&eacute;fensives ne portent plus que du d&eacute;fensif. Accuracy, crit, boss attack, block et evasion deviennent rares, donc les caps d'accuracy seront plus durs &agrave; atteindre. Arrivent en &eacute;change status effect resist, status effect chance et des PV en pourcentage.</li>
+      <li class="ok"><b>Les familiers plafonnent au niveau 3</b>Contre 5 ailleurs, et ce n'est pas une mont&eacute;e raccourcie qui garde le m&ecirc;me total. C'est un plafond pos&eacute; sur les stats, avec des lignes chang&eacute;es au passage. Le Superior Wind Spirit donne stamina, crit res et precision l&agrave; o&ugrave; la Cor&eacute;e donne MP, precision, willpower, crit res et nature damage.</li>
+      <li class="ok"><b>Le Monolithe ne donne plus de points de comp&eacute;tence</b>Les deux le constatent, sans s'accorder sur la destination. L'un les voit redistribu&eacute;s en gain par niveau, l'autre les voit passer dans les donjons scell&eacute;s. Dans les deux cas la route change.</li>
+      <li class="ok"><b>Les &eacute;clats de stigma s'ach&egrave;tent chez le Shugo</b>35 &eacute;clats, sans palier d&eacute;gressif, &agrave; l'emplacement o&ugrave; la Cor&eacute;e met des points de comp&eacute;tence. On les retrouve dans la boutique de l'Ab&icirc;me et celle du mode cauchemar. L'&eacute;clat instable, lui, a disparu de partout.</li>
+      <li class="ok"><b>Tableaux et ailes tombent directement</b>Plus de fragments &agrave; assembler ni de duvets &agrave; empiler. Les tableaux du Panth&eacute;on s'ach&egrave;tent finis contre des jetons dans la boutique d&eacute;coration, et le mini-jeu des tuiles se cheese toujours, donc on pourra les prendre tous. Chapitres 8 et 9.</li>
+      <li class="ok"><b>L'&eacute;conomie free-to-play est plus large qu'en Cor&eacute;e</b>Trois cl&eacute;s Shugo par jour au lieu d'une, trois Odyle radieuse achetables chaque mois, et le rechargement d'&eacute;nergie des donjons est d&eacute;j&agrave; celui des abonn&eacute;s sans avoir l'abonnement. Le reset est cal&eacute; sur le mercredi. Chapitre 12.</li>
+    </ul>
+    <h3 class="une">Ce qu'une seule source donne<span class="cnt">&agrave; confirmer</span></h3>
+    <ul>
+      <li class="att"><b>Le tableau Divin dispara&icirc;t, le Daevanion est coup&eacute; de moiti&eacute;</b>Le board Divin n'est plus dans le jeu. Il donnait beaucoup de d&eacute;g&acirc;ts PvE et de tol&eacute;rance, et c'&eacute;tait une porte d'entr&eacute;e au pay-to-win. Sur le Daevanion, les nodes majeurs sont divis&eacute;s par deux. Combat speed 1,5&nbsp;% au lieu de 2,5, r&eacute;duction de cooldown pareil, damage boost 2,5 au lieu de 5, attaque 3 au lieu de 5, crit 5 au lieu de 10. Le board Asphel PvP, lui, reste. Chapitre 8.</li>
+      <li class="att"><b>On ne fabrique plus directement au-dessus du palier 1</b>La fabrication garantie pay&eacute;e en boutique de saison dispara&icirc;t, il ne reste que celle qui peut rater. Et pour monter au-dessus du premier palier il faut passer par le transfert depuis Star Dragon ou True Dragon, sans br&ucirc;ler d'&eacute;tape. En contrepartie les ingr&eacute;dients draconiques deviennent tous &eacute;changeables, donc bien plus faciles &agrave; trouver. Chapitre 6.</li>
+      <li><b>Les cubes cach&eacute;s donnent 1000 cristaux d'&acirc;me &agrave; tous les coups</b>Contre 100 ailleurs. &Ccedil;a fait des cubes la vraie source de Genus, d'autant que les quotidiens ont &eacute;t&eacute; r&eacute;duits &agrave; celui des pierres d'am&eacute;lioration et que le reste du farm se fait sur les mobs du monde ouvert. Chapitre 9.</li>
+      <li><b>Tickets de piti&eacute; partout, et un guard fabricable</b>Tous les donjons qui n'en avaient pas en ont maintenant. L'arme se convertit pour un ticket au lieu de deux, et surtout on peut se fabriquer un guard pour deux tickets. En Cor&eacute;e, sortir un guard correct en d&eacute;but de saison relevait du miracle. Chapitres 5 et 6.</li>
+      <li><b>Le bracelet du Sanctuaire passe en or et arrive tout de suite</b>Trois tickets de piti&eacute; et 5 millions de kinah d&egrave;s l'ouverture, l&agrave; o&ugrave; Ta&iuml;wan demandait deux tickets et 20 millions en fin de saison 2. M&ecirc;mes stats, m&ecirc;mes liens d'&acirc;me, iLevel un peu plus haut. Chapitre 6.</li>
+      <li><b>Les plafonds d'am&eacute;lioration baissent</b>Le vert s'arr&ecirc;te &agrave; +5 au lieu de 10, le bleu &agrave; +10 au lieu de 15. Chapitre 6.</li>
+      <li><b>Les paliers d'entr&eacute;e en Conqu&ecirc;te baissent</b>Crow Cave passe de 1000 &agrave; 700, Urugu Canyon de 1600 &agrave; 1400, le Temple du Feu et Ferious Horn de 2200 &agrave; 2100. Chapitre 10.</li>
+      <li><b>Les ailes ne donnent plus de cristaux d'&acirc;me</b>L'aile scell&eacute;e se dissout en 10&nbsp;000 pierres d'am&eacute;lioration, mais l'aile mont&eacute;e n'est ni &eacute;changeable ni dissoluble. En Cor&eacute;e on achetait des ailes &agrave; l'h&ocirc;tel des ventes pour les casser en 90&nbsp;000 pierres. Chapitre 9.</li>
+      <li><b>M&eacute;dailles d'argent seulement</b>Donc de l'&eacute;quipement Centurion en saison 1, et rien au-dessus. Les m&eacute;dailles ne sont pas list&eacute;es en r&eacute;compense de qu&ecirc;te, elles ne semblent donc pas li&eacute;es aux saisonni&egrave;res. L'amulette PvP passe par vert, bleu, or comme la PvE, et le plafond d'AP est &agrave; 500&nbsp;000. Chapitre 10.</li>
+      <li><b>Les titres sont nerf&eacute;s, et plus aucun ne donne de smite</b>M&ecirc;me logique que partout ailleurs sur cette build, on nous veut plus faibles pour que le contenu tienne plus longtemps. Chapitre 8.</li>
+      <li><b>Le Daevanion Ariel est absent du test</b>Peut-&ecirc;tre repouss&eacute; apr&egrave;s le lancement. Mes quatre arbres du chapitre 8 restent donc le pari le plus s&ucirc;r.</li>
+      <li class="att"><b>Chat de faction au niveau 10, r&eacute;colte sans palier</b>En Cor&eacute;e les deux sont bloqu&eacute;s au 45, et c'est une mesure anti-bot. Le premier jour de test a d&eacute;j&agrave; vu du spam de vendeurs d'or.</li>
+    </ul>
+    <p>Deux sources valent mieux qu'une, mais le serveur n'a ouvert que quelques heures, six jours avant le lancement. Les deux cr&eacute;ateurs pr&eacute;cisent eux-m&ecirc;mes qu'ils ignorent ce qui tiendra. Je remonterai ce qui bouge.</p>
   </section>
 
   <details class="mobile-toc">
@@ -744,7 +841,7 @@ nav.toc.desk{display:none;}
         <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 07 — Compétences</span>
         <h2 class="sec">Monter ses sorts au niveau 20</h2>
         <p class="sec-intro">Deuxième pilier de la puissance, à égalité avec l'équipement, et de loin le plus négligé par les joueurs qui débarquent d'autres MMO.</p>
-        <p>Un sort atteint son plein potentiel au <strong>niveau 20</strong>. Les points de compétence gratuits (plumes, monolithe) ne vous emmènent qu'au <strong>niveau 10</strong> ; au-delà, il faut passer par les cartes d'arcane et les bonus d'équipement.</p>
+        <p>Un sort atteint son plein potentiel au <strong>niveau 20</strong>. Les points de compétence gratuits (plumes, monolithe) ne vous emmènent qu'au <strong>niveau 10</strong> ; au-delà, il faut passer par les cartes d'arcane et les bonus d'équipement.<a class="j1" href="#j1">test de lancement</a></p>
 
         <h3>Les paliers qui comptent</h3>
         <div class="tw">
@@ -848,9 +945,9 @@ nav.toc.desk{display:none;}
         <p>Lié aux familiers, et l'un des systèmes les plus rentables du jeu. Cinq arbres, un par famille, quasiment identiques, alimentés par des <strong>cristaux d'âme</strong> de la couleur correspondante : Conis bleu, Feras rouge, Nature vert, Variants jaune, Spéciaux turquoise.</p>
         <div class="note gold">
           <span class="lab g">La marche à suivre</span>
-          <p>En early, <strong>montez les cinq arbres au niveau 10</strong> à fond les ballons, sans regarder les stats que ça débloque. Chaque niveau ouvre un emplacement. Une fois au niveau&nbsp;10, le clic ne monte plus rien : il sert à <strong>relancer</strong> les stats non verrouillées, et c'est seulement là que commence l'optimisation. Une exception pendant la montée : si vous tombez sur une stat <strong>héroïque orange</strong> qui vous intéresse, verrouillez-la tout de suite.</p>
+          <p>En early, <strong>montez les cinq arbres au niveau 10</strong><a class="j1" href="#j1">test de lancement</a> à fond les ballons, sans regarder les stats que ça débloque. Chaque niveau ouvre un emplacement. Une fois au niveau&nbsp;10, le clic ne monte plus rien : il sert à <strong>relancer</strong> les stats non verrouillées, et c'est seulement là que commence l'optimisation. Une exception pendant la montée : si vous tombez sur une stat <strong>héroïque orange</strong> qui vous intéresse, verrouillez-la tout de suite.</p>
         </div>
-        <p>Chaque arbre compte <strong>neuf nodes</strong>, et <strong>les nodes 3 et 9 sont les plus importantes : ce sont elles qui portent le smite</strong>. Pour le reste, cherchez de l'offensif : attaque, précision et critique tant que vous n'êtes pas au cap, puis front attack et back attack selon votre classe.</p>
+        <p>Chaque arbre compte <strong>neuf nodes</strong>, et <strong>les nodes 3 et 9 sont les plus importantes, ce sont elles qui portent le smite</strong><a class="j1" href="#j1">test de lancement</a>. Pour le reste, cherchez de l'offensif : attaque, précision et critique tant que vous n'êtes pas au cap, puis front attack et back attack selon votre classe.</p>
         <div class="note trap">
           <span class="lab">Le piège n°7 : verrouiller trop tôt</span>
           <p>Chaque ligne verrouillée <strong>fait grimper le coût de la relance suivante</strong>, et pas qu'un peu : on passe de quelques centaines à plusieurs dizaines de milliers. Sécuriser sa première stat correcte par réflexe se paie en milliers de cristaux d'âme sur la durée.</p>
@@ -1096,7 +1193,8 @@ nav.toc.desk{display:none;}
         <ul class="srclist">
           <li><span class="lvl tw">Expérience perso</span><span>Mes heures sur la version taïwanaise. C'est le filtre que j'ai appliqué à tout le reste : ce qui ne collait pas avec ce que j'ai vu en jeu a été écarté, ou signalé comme à vérifier.</span></li>
           <li><span class="lvl off">Officiel</span><span>Dates du test de charge et du lancement, régions de serveurs, packs fondateur et prix, modèle économique, tailles de groupe : annonces NCSOFT, page Steam, plus la couverture d'Inven Global, MMO Culture et MMORPG.com.</span></li>
-          <li><span class="lvl tw">Terrain Taïwan</span><span><strong>St4rline_TV</strong> pour la roadmap de lancement et <strong>Aiola</strong> pour l'optimisation PvE en trois parties, avec son fan site aion2.fr. Les deux jouent sur les serveurs taïwanais et ce sont les plus fiables sur le fonctionnement réel des systèmes, en gardant en tête qu'ils décrivent une version qui a du contenu d'avance.</span></li>
+          <li><span class="lvl com">Test de lancement</span><span>Deux créateurs ont publié sur la build du Launch Scale Test. L'un a raconté sa journée d'ouverture, l'autre est monté au niveau 30 et a comparé menu par menu avec la version taïwanaise. C'est la seule matière qu'on ait sur le client global, et c'est aussi la plus fragile, puisque rien ne dit que cette build soit celle du 5 octobre. Tout est regroupé dans l'encadré doré en haut de page, avec ce que les deux confirment d'un côté et ce qu'un seul avance de l'autre.</span></li>
+           <li><span class="lvl tw">Terrain Taïwan</span><span><strong>St4rline_TV</strong> pour la roadmap de lancement et <strong>Aiola</strong> pour l'optimisation PvE en trois parties, avec son fan site aion2.fr. Les deux jouent sur les serveurs taïwanais et ce sont les plus fiables sur le fonctionnement réel des systèmes, en gardant en tête qu'ils décrivent une version qui a du contenu d'avance.</span></li>
           <li><span class="lvl com">Communauté</span><span>Compléments sur la routine et les monnaies, SlashingCreeps notamment. Les compilations se recoupent entre elles, mais plusieurs valeurs bougeront en version globale.</span></li>
           <li><span class="lvl com">À confirmer</span><span>Les détails « Saison 1 globale » (pas d'équipement héroïque, 4 slots de stigma, seuils d'iLevel relevés) viennent de sites de revente qui relaient les communications de NC. L'orientation générale est confirmée par plusieurs sources indépendantes, les chiffres exacts non.</span></li>
         </ul>
@@ -1112,7 +1210,7 @@ nav.toc.desk{display:none;}
       </section>
 
       <footer>
-        <p>Dernière mise à jour le 18 septembre 2026, après le Launch Scale Test et avant l'ouverture des serveurs européens. Écrit à partir de mon temps de jeu sur la version taïwanaise, de deux guides de joueurs TW, des annonces officielles, et de six heures sur le client global. Une partie des chiffres bougera encore au lancement. Je mettrai la page à jour au fil des premières semaines.</p>
+        <p>Dernière mise à jour le 19 septembre 2026, après le Launch Scale Test et avant l'ouverture des serveurs européens. Écrit à partir de mon temps de jeu sur la version taïwanaise, de deux guides de joueurs TW, des annonces officielles, et de six heures sur le client global. Une partie des chiffres bougera encore au lancement. Je mettrai la page à jour au fil des premières semaines.</p>
         <p>Habillage graphique original. Ni le logo ni les visuels d'Aion&nbsp;2 ne sont reproduits ici ; Aion&nbsp;2 est une marque de NCSOFT Corporation.</p>
       </footer>
 
